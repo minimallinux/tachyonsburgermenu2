@@ -1,0 +1,130 @@
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+ html {
+  overflow-y: scroll;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+.main-nav {
+  display: flex;
+  min-height: 50px;
+ /* background: black;*/
+  opacity: .8;
+  padding: 0 1rem;
+  align-items: center;
+
+}
+.hamburger {
+  display: none;
+}
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+.main-nav-list li {
+/*background: black;*/
+}
+.main-nav-list li a {
+  /*background: black;*/
+  padding: 5px;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .main-nav {
+    flex-wrap: wrap;
+  }
+
+  .main-nav-list {
+    display: block;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.25s;
+    text-decoration: none;
+  }
+.main-nav-list.open {
+    max-height: 500px;
+    padding-bottom: 10px;
+  }
+  /* closes media query*/
+
+  .hamburger{
+    display: block;
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    outline: none;
+
+
+  }
+.hamburger div {
+    height: 7px;
+    width: 50px;
+    background: #fff;
+    position: absolute;
+    border-radius: 3px;
+    transform: translate(-50%, 0%);
+    top: 50%;
+    left: 50%;
+
+  }
+ .hamburger div:first-child {
+    top: 25%;
+  }
+
+  .hamburger div:nth-child(2) {
+    top: 50%;
+  }
+
+  .hamburger div:nth-child(3){
+    top: 75%;
+  }
+
+  .hamburger.close div:first-child {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .hamburger.close div:nth-child(2) {
+    opacity: 0;
+  }
+
+
+  .hamburger.close div:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+
+}
