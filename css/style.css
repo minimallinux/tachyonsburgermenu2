@@ -57,7 +57,7 @@ a:hover {
   padding: 5px;
   text-decoration: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .main-nav {
     flex-wrap: wrap;
   }
@@ -97,6 +97,7 @@ a:hover {
     transform: translate(-50%, 0%);
     top: 50%;
     left: 50%;
+    transition: all 0.3s ease-in-out;
 
   }
  .hamburger div:first-child {
@@ -114,6 +115,8 @@ a:hover {
   .hamburger.close div:first-child {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
+    transition: all 0.3s ease-in-out;
+
   }
 
   .hamburger.close div:nth-child(2) {
@@ -124,6 +127,8 @@ a:hover {
   .hamburger.close div:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+
   }
 
 
