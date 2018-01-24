@@ -9,5 +9,5 @@ Change Logo/Brand size by adding class and font-size/whatever, or add a logo ima
 
 Useful alternative to Bootstrap with just a small javascript file.
 
-#To Do, create Wordpress Version for Sage 9/Blade Views.
+#To Do, create Wordpress Version for Sage 9/Blade Views. Add media query to hide logo between 505 & 668px
 
